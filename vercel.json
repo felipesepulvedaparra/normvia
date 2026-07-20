@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/monitoreo-normativo?secret=normvia-cron-2026",
+      "schedule": "0 8 * * 1-5"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: #FAFAF8; color: #0A1628; }
+body { font-family: 'Inter', system-ui, sans-serif; font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+input, textarea, select, button { font-family: inherit; }
+a { color: inherit; text-decoration: none; }
+
+/* Scrollbar sutil */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D0D0DC; border-radius: 4px; }
+
+/* Login inputs */
+.login-grid input[type="text"],
+.login-grid input[type="email"],
+.login-grid input[type="password"],
+.login-grid select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #E2E2EC;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0A1628;
+  background: #fff;
+  outline: none;
+  transition: border-color .15s;
+}
+.login-grid input:focus,
+.login-grid select:focus { border-color: #0A1628; }
+
+@media (max-width: 900px) {
+  .login-grid { grid-template-columns: 1fr !important; }
+}
